@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow:auto;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222021;
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-title img {
+            height: 80px;
+            margin-right: 20px;
+        }
+        .register{
+            display: flex;
+            align-items: center;
+        }
+        .register i{
+            height: 24px;
+            margin-left: 5px;
+        }
+        #foc:focus{
+            background-color:rgb(97, 194, 97);
+            color: aliceblue;
+            font-weight: bolder;
+            border-radius: 20px;
+            border-bottom: 3px solid red;
+        }
+        #foc{
+            font-family: poppins;
+        }
+        #blinking-text {
+            animation: blink 1s infinite;
+            color: #ec6995;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #count{
+            width: 20px;
+            height: 20px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            top: -40px;
+        }
+        .row #adtc{
+            background-color: aqua;
+            width: 100%;
+            height: 500px;
+        }
+        #bx{
+            border: 1px solid grey;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+            margin-left: 350px;
+        }
+        #mp{
+            width: 100%;
+        }
+        @media(max-width:576px){
+            #bx{
+                margin-left: 0px;
+            }
+        }
+        .cta-button {  
+  background-color: #333;  
+  color: #fff;  
+  padding: 10px 20px;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+}  
+  
+.cta-button:hover {  
+  background-color: #444;  
+}  
+  
+.cta-button:active {  
+  transform: scale(0.9);  
+}
+#disp{
+    color: wheat;
+}
+@media(max-width:320px){
+    #txt{
+        font-size: small;
+    }
+}
+    </style>
+<div  class="container-fluid">
+    <header class="header sticky-top">
+        <div class="logo-title">
+            <img src="Untitled_design-removebg-preview.png">
+            <h1 style="color: rgb(236, 105, 149);overflow: hidden;" id="blinking-text">SCOOP ICE CREAM</h1>
+        </div>
+        <div class="register text-light">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <a href="register.html" class="navbar-brand"><b>REGISTER</b></a>
+        </div>
+       </header>
+        <nav class="navbar bg-dark navbar-expand-lg navbar-light sticky-top" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <button class="navbar-toggler   bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="justify-content: end;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand text-danger active" href="index.html" id="foc">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-danger" href="about.html" id="foc">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-danger" href="chat.html" id="foc">EXPLORE PRODUCTS</a>
+                </li>
+                <li class="nav-item"  style="display: flex;">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(241, 234, 234);margin-left: 10px;margin-top: 10px;"></i><a class="nav-link navbar-brand text-danger" href="chat.html" id="foc">ADD TO CART</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-danger" href="contact.html"  id="foc"><i class="fa-solid fa-phone" style="color: rgb(241, 235, 235);margin-left: 10px;"></i>CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <input  type="search"  placeholder="Search  Items"  id="srch">
+                    <div  id="disp"></div>
+                </li>
+            </ul>
+            </div>
+        </nav>
+            <div  class="row">
+                <div  class="col-12">
+                    <img src="contact.jpg"  width="100%"    height="200px" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 style="font-family: Poppins;text-shadow: 5px 6px 3px Grey;text-align: center;"><b>Contact Us</b></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sm-col-4 lg-col-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31095.756277240256!2d80.13398537379615!3d13.03761118273547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52611b90488f51%3A0x9665a1353b333074!2sPorur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1722419322950!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  id="mp"></iframe>
+                </div>
+                <div class="sm-col-4 lg-col-6">
+                    <div id="bx">
+                        <form>
+                            <input  type="text" placeholder="Enter  Name"   id="nm" class="form-control m-3"    style="width: 400px;"   required >
+                            <input  type="text" placeholder="Enter  Mail Id"   id="nm" class="form-control m-3"    style="width: 400px;" required>
+                            <textarea  placeholder="Message"   id="nm" class="form-control m-3"    style="width: 400px" required></textarea>
+                            <button class="btn  btn-lg  btn-outline-success  m-4"   data-bs-toggle="modal"  data-bs-target="#Modal">Send Message</button>
+                            <div  class="modal" id="Modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <p>Successfully Sent....!<br>We'll  Contact you  as soon as possible...!!!</p>
+                                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div> 
+            <div class="row">
+                <div class="col-12">
+                    <div style="width: 100%; display: flex; background-color: rgb(236, 122, 56);height: 370px;border: 2px solid white;margin: 1px solid white;outline: 3px solid lightseagreen;justify-content: space-around;">
+                        <div  style="width: 300px;height: 300px;overflow: hidden;" id="txt">
+                            <h1 style="font-family: poppins;color: rgb(238, 171, 84);text-shadow: 5px 6px 4px black;">CONTACT</h1><br>
+                            <div style="display: flex;">
+                               <i class="fa-solid fa-phone" style="background-color: black;color: aliceblue;border-radius:50%;margin-right: 20px;margin-top: 6px;"></i>
+                               <h5>+91-9384009612</h5> 
+                            </div>
+                            <div style="display: flex;">
+                               <i class="fa-solid fa-phone" style="background-color: black;color: aliceblue;border-radius:50%;margin-right: 20px;margin-top: 6px;"></i>
+                               <h5>+91-9380361044</h5> 
+                            </div><br>
+                            <h4 class="text-danger" style="text-shadow: 5px 6px 4px black;">For Orders</h4><br>
+                            <div style="display: flex;">
+                               <i class="fa-solid fa-phone" style="background-color: black;color: aliceblue;border-radius:50%;margin-right: 20px;margin-top: 6px;"></i>
+                               <h5>+91-7845205790</h5> 
+                            </div>
+                        </div>
+                        <div  style="width: 300px;height: 300px;">
+                            <h4 class="text-danger" style="text-shadow: 5px 6px 4px black;">Branches</h4><br>
+                            <div style="display: flex;">
+                                <i class="fa-solid fa-location" style="margin-top: 8px;margin-right: 5px;"></i>
+                                <h4>PORUR</h4>
+                            </div>
+                            <div style="display: flex;">
+                                <i class="fa-solid fa-location" style="margin-top: 8px;margin-right: 5px;"></i>
+                                <h4>ANNA NAGAR</h4>
+                            </div>
+                            <div style="display: flex;">
+                                <i class="fa-solid fa-location" style="margin-top: 8px;margin-right: 5px;"></i>
+                                <h4>T.NAGAR</h4>
+                            </div>
+                        </div>
+                        <div style="width: 300px;height: 300px;">
+                            <h4 class="text-danger" style="text-shadow: 5px 6px 4px black;">Follow Us</h4>
+                            <div style="display: flex;">
+                                <i class="fa-brands fa-instagram" style="margin-top: 8px;margin-right: 5px;"> </i>
+                                <h4>INSTAGRAM</h4>
+                            </div>
+                            <div style="display: flex;">
+                                <i class="fa-brands fa-youtube" style="margin-top: 8px;margin-right: 5px;"> </i>
+                                <h4>YOUTUBE</h4>
+                            </div>
+                            <div style="display: flex;">
+                                <i class="fa-brands fa-facebook" style="margin-top: 8px;margin-right: 5px;"> </i>
+                                <h4>FACEBOOK</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                      
+</div>
+<script src="contact.js"></script>
+<script src="bootstrap.bundle.js"></script>
+</body>
+</html>
